@@ -1,0 +1,31 @@
+﻿<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>jQuery: Set the text content for selected element(s)</Title>
+      <Author>John Sheehan (@johnsheehan)</Author>
+      <Shortcut>jqtextset</Shortcut>
+      <HelpUrl>http://jquerysnippets.codeplex.com</HelpUrl>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>selector</ID>
+          <ToolTip>Element(s) to be modified</ToolTip>
+          <Default>selector</Default>
+        </Literal>
+        <Literal>
+          <ID>text</ID>
+          <ToolTip>Text to set as value</ToolTip>
+          <Default>text</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="JavaScript">
+        <![CDATA[$$($selector$).text($text$);$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
+

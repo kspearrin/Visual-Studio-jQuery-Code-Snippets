@@ -1,0 +1,39 @@
+﻿<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>jQuery: one(eventName, data, function)</Title>
+      <Author>John Sheehan (@johnsheehan)</Author>
+      <Shortcut>jqonewithdata</Shortcut>
+      <HelpUrl>http://jquerysnippets.codeplex.com</HelpUrl>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>selector</ID>
+          <ToolTip>Elements to bind to</ToolTip>
+          <Default>selector</Default>
+        </Literal>
+        <Literal>
+          <ID>eventName</ID>
+          <ToolTip>Event name to bind</ToolTip>
+          <Default>eventName</Default>
+        </Literal>
+        <Literal>
+          <ID>data</ID>
+          <ToolTip>Additional data passed to the event handler as event.data</ToolTip>
+          <Default>{ name: "value" }</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="JavaScript">
+        <![CDATA[
+$$($selector$).one($eventName$, $data$, function(e){
+    $end$
+});]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
+

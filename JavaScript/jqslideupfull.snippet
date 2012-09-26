@@ -1,0 +1,33 @@
+﻿<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Effects: slideUp(speed, callback)</Title>
+      <Author>John Sheehan (@johnsheehan)</Author>
+      <Shortcut>jqslideupfull</Shortcut>
+      <HelpUrl>http://jquerysnippets.codeplex.com</HelpUrl>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>selector</ID>
+          <ToolTip>jQuery selector</ToolTip>
+          <Default>selector</Default>
+        </Literal>
+        <Literal>
+          <ID>speed</ID>
+          <ToolTip>'slow', 'normal', 'fast' or milliseconds</ToolTip>
+          <Default>speed</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="JavaScript">
+        <![CDATA[$$($selector$).slideUp($speed$, function () {
+    $end$
+});]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
+

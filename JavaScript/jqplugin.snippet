@@ -1,0 +1,43 @@
+﻿<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>jQuery: plugin template</Title>
+      <Author>John Sheehan (@johnsheehan)</Author>
+      <Shortcut>jqplugin</Shortcut>
+      <HelpUrl>http://jquerysnippets.codeplex.com</HelpUrl>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>pluginName</ID>
+          <ToolTip>Name of the plugin to create</ToolTip>
+          <Default>myPlugin</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="JavaScript">
+        <![CDATA[
+(function($) {
+ 
+   jQuery.fn.$pluginName$ = function(settings) {
+     var config = {'foo': 'bar'};
+ 
+     if (settings) jQuery.extend(config, settings);
+ 
+     this.each(function() {
+       // element-specific code here
+       $end$
+     });
+ 
+     return this;
+ 
+   };
+ 
+ })(jQuery);
+]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

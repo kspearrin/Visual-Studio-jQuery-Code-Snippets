@@ -1,0 +1,25 @@
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>jQuery: script tag and $(document).ready() shortcut</Title>
+      <Author>John Sheehan (@johnsheehan)</Author>
+      <Shortcut>jqscriptmin</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>path</ID>
+          <ToolTip>Path to jQuery script</ToolTip>
+          <Default>/Scripts/jquery-1.3.2.min.js</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="html">
+        <![CDATA[<script type="text/javascript" src="$path$"></script>
+$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
