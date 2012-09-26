@@ -20,7 +20,7 @@
         <Literal>
           <ID>data</ID>
           <ToolTip>Data to send (querystring)</ToolTip>
-          <Default>{ name: "value" }</Default>
+          <Default>name=John&amp;location=Boston</Default>
         </Literal>
         <Literal>
           <ID>dataType</ID>
@@ -32,7 +32,7 @@
         <![CDATA[$$.ajax({
   type: "POST",
   contentType: "application/json; charset=utf-8",
-  dataType: "$dataType$"
+  dataType: "$dataType$",
   url: "WebService.asmx/WebMethodName", // or Page.aspx/PageMethodName
   data: "$data$" // must be enclosed in quotes
 });]]>
