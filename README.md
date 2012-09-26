@@ -8,8 +8,8 @@ Please feel free to submit pull requests to update this project.
 
 ## Installation
 
-1. Download the "jQuery Snippets" folder and all of its contents from this respository (https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets/zipball/master).
-2. Drop the "jQuery Snippets" folder that you just downloaded into the "Documents" > "Visual Studio 2012" > "Code Snippets" folder.
+1. Download the "jQuery Snippets" folder and all of its contents from this respository here: https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets/zipball/master
+2. Extract the zip and drop the "jQuery Snippets" folder into the "Documents" > "Visual Studio 2012" > "Code Snippets" folder on your computer.
 3. In Visual Studio, navigate to "Tools" > "Code Snippet Manager".
 4. Select language "HTML" from the language dropdown menu.
 5. Select the "Add" button at the bottom.
@@ -19,6 +19,10 @@ Please feel free to submit pull requests to update this project.
 9. Repeat steps 5-7 for the "Documents/Visual Studio 2012/Code Snippets/jQuery Snippets/jQuery JavaScript" folder.
 10. Click "OK" to exit the Code Snippet Manager.
 11. Restart Visual Studio.
+
+## Snippet Listing
+
+There are over 130 code snippets for jQuery included. You can view a listing of all of these snippets on the project wiki here: https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets/wiki/Snippet-Listing
 
 ## TODO
 
