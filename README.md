@@ -6,6 +6,10 @@ Most of these snippets were originally developed by John Sheehan (http://jquerys
 
 Please feel free to submit pull requests to update this project.
 
+## Download
+
+[Download v1.0](https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets/zipball/master) (.zip)
+
 ## Installation
 
 1. Download the "jQuery Snippets" folder and all of its contents from this respository here: https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets/zipball/master
