@@ -8,7 +8,7 @@ Please feel free to submit pull requests to update this project.
 
 ## Download
 
-[Download v1.1](https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets/zipball/master) (.zip)
+[Download v1.2](https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets/zipball/master) (.zip)
 
 ## Installation
 
