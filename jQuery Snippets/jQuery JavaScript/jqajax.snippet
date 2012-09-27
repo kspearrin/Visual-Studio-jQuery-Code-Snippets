@@ -19,7 +19,7 @@
         <Literal>
           <ID>method</ID>
           <ToolTip>HTTP Method to use (GET, POST, etc.)</ToolTip>
-          <Default>GET</Default>
+          <Default>POST</Default>
         </Literal>
         <Literal>
           <ID>data</ID>
@@ -43,7 +43,7 @@
     url: "$url$",
     data: "$data$",
     dataType: "$dataType$",
-    success: function(data) {
+    success: function(response) {
         $end$
     }
 });]]>

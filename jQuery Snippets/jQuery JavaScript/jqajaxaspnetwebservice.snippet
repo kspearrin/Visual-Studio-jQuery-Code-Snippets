@@ -15,12 +15,12 @@
         <Literal>
           <ID>url</ID>
           <ToolTip>The URL for the request</ToolTip>
-          <Default>/url</Default>
+          <Default>WebService.asmx/WebMethodName</Default>
         </Literal>
         <Literal>
           <ID>data</ID>
-          <ToolTip>Data to send (querystring)</ToolTip>
-          <Default>name=John&amp;location=Boston</Default>
+          <ToolTip>Data to send</ToolTip>
+          <Default>{}</Default>
         </Literal>
         <Literal>
           <ID>dataType</ID>
@@ -30,11 +30,14 @@
       </Declarations>
       <Code Language="JavaScript">
         <![CDATA[$$.ajax({
-  type: "POST",
-  contentType: "application/json; charset=utf-8",
-  dataType: "$dataType$",
-  url: "WebService.asmx/WebMethodName", // or Page.aspx/PageMethodName
-  data: "$data$" // must be enclosed in quotes
+	type: "POST",
+	contentType: "application/json; charset=utf-8",
+	dataType: "$dataType$",
+	url: "$url$",
+	data: "$data$",
+	success: function(response) {
+		$end$
+	}
 });]]>
       </Code>
     </Snippet>
