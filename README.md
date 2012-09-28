@@ -23,6 +23,7 @@ Please feel free to submit pull requests to update this project.
 9. Repeat steps 5-7 for the "Documents/Visual Studio 2012/Code Snippets/jQuery Snippets/jQuery JavaScript" folder.
 10. Click "OK" to exit the Code Snippet Manager.
 11. Restart Visual Studio.
+12. Start [using the code snippets](https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets/wiki/Using-Code-Snippets).
 
 ## Snippet Listing
 
