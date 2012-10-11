@@ -1,6 +1,6 @@
 # Visual Studio jQuery Code Snippets
 
-I have updated the popular jQuery code snippets for use in Visual Studio 2012.
+I have updated the popular jQuery code snippets for use in Visual Studio 2012. See a demo video on YouTube here: http://www.youtube.com/watch?v=Escy0hbEkI8&hd=1
 
 Most of these snippets were originally developed by John Sheehan (http://jquerysnippets.codeplex.com/) for Visual Studio 2010.
 
@@ -8,7 +8,7 @@ Please feel free to submit pull requests to update this project.
 
 ## Download
 
-[Download v1.2](https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets/zipball/master) (.zip)
+[Download v1.1](https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets/zipball/master) (.zip)
 
 ## Installation
 
