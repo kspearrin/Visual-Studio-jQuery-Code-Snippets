@@ -1,0 +1,29 @@
+﻿<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>jQuery: $(selector).each() template</Title>
+      <Author>John Sheehan (@johnsheehan)</Author>
+      <Shortcut>jqeachelement</Shortcut>
+      <HelpUrl>https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>selector</ID>
+          <ToolTip>The elements to loop over</ToolTip>
+          <Default>selector</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="JavaScript">
+        <![CDATA[
+$$($selector$).each(function (index, domEle) {
+    // domEle == this
+    $end$
+});]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

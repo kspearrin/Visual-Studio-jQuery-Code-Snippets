@@ -1,0 +1,31 @@
+﻿<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>jQuery: Wrap the inner child contents of each matched element (including text nodes) with an HTML structure.</Title>
+      <Author>John Sheehan (@johnsheehan)</Author>
+      <Shortcut>jqwrapinner</Shortcut>
+      <HelpUrl>https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>selector</ID>
+          <ToolTip>Element(s) to be modified</ToolTip>
+          <Default>selector</Default>
+        </Literal>
+        <Literal>
+          <ID>tag</ID>
+          <ToolTip>Tag to wrap content with</ToolTip>
+          <Default>div</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="JavaScript">
+        <![CDATA[$$($selector$).wrapInner(<$tag$></$tag>);$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
+
