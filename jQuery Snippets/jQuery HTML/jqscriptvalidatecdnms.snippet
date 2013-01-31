@@ -10,8 +10,15 @@
       <Shortcut>jqscriptvalidatecdnms</Shortcut>
     </Header>
     <Snippet>
+	  <Declarations>
+        <Literal>
+          <ID>version</ID>
+          <ToolTip>Library version number</ToolTip>
+          <Default>1.10.0</Default>
+        </Literal>
+      </Declarations>
       <Code Language="html">
-        <![CDATA[<script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+        <![CDATA[<script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.validate/$version$/jquery.validate.min.js"></script>
 $end$]]>
       </Code>
     </Snippet>

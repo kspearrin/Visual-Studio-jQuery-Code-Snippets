@@ -10,8 +10,15 @@
       <Shortcut>jqscriptcdnms</Shortcut>
     </Header>
     <Snippet>
+	  <Declarations>
+        <Literal>
+          <ID>version</ID>
+          <ToolTip>Library version number</ToolTip>
+          <Default>1.9.0</Default>
+        </Literal>
+      </Declarations>
       <Code Language="html">
-        <![CDATA[<script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+        <![CDATA[<script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-$version$.min.js"></script>
 $end]]>
       </Code>
     </Snippet>

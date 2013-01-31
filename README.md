@@ -29,6 +29,14 @@ Please feel free to submit pull requests to update this project.
 
 There are over 130 code snippets for jQuery included. You can view a listing of all of these snippets on the project wiki here: https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets/wiki/Snippet-Listing
 
+## Changelog
+
+**v1.2**
+- All snippets now have CamelCase shortcut titles for easier reading.
+- Added jqFind, jqScriptValidateUnobtrusiveCdnMs snippets.
+- Changed jqDr => jqDocReady, jqDrs => jqDocReadyShort.
+- Added version declarations to appropriate jqScript\*Cdn\* snippets.
+
 ## TODO
 
 - Create an easy installer.
