@@ -8,7 +8,7 @@ Please feel free to submit pull requests to update this project.
 
 ## Download
 
-[Download v1.1](https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets/zipball/master) (.zip)
+[Download v1.2](https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets/zipball/master) (.zip)
 
 ## Installation
 
@@ -34,12 +34,12 @@ There are over 130 code snippets for jQuery included. You can view a listing of 
 **v1.2**
 - All snippets now have CamelCase shortcut titles for easier reading.
 - Added jqFind, jqScriptValidateUnobtrusiveCdnMs snippets.
-- Changed jqDr => jqDocReady, jqDrs => jqDocReadyShort.
+- Changed jqDr => jqDocReady, jqDrs => jqDocReadyShort, jqheight => jqHeightSet.
 - Added version declarations to appropriate jqScript\*Cdn\* snippets.
 
 ## TODO
 
 - Create an easy installer.
-- Update snippets to latest jQuery version. They are currently based on an old jQuery build.
+- Add missing jQuery snippets (most of these were all created based on an old jQuery build back in the day).
 
 ** Please feel free to submit pull requests to update this project.
