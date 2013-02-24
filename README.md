@@ -4,8 +4,6 @@ I have updated the popular jQuery code snippets for use in Visual Studio 2012. S
 
 Most of these snippets were originally developed by John Sheehan (http://jquerysnippets.codeplex.com/) for Visual Studio 2010.
 
-Please feel free to submit pull requests to update this project.
-
 ## Download
 
 [Download v1.2](https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets/zipball/master) (.zip)
@@ -37,9 +35,11 @@ There are over 130 code snippets for jQuery included. You can view a listing of 
 - Changed jqDr => jqDocReady, jqDrs => jqDocReadyShort, jqheight => jqHeightSet.
 - Added version declarations to appropriate jqScript\*Cdn\* snippets.
 
+## Contributing
+
+Please feel free to submit pull requests to the **dev** branch.
+
 ## TODO
 
 - Create an easy installer.
 - Add missing jQuery snippets (most of these were all created based on an old jQuery build back in the day).
-
-** Please feel free to submit pull requests to update this project.
