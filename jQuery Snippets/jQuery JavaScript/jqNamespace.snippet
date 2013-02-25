@@ -1,0 +1,41 @@
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.2.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>jQuery: namespace template</Title>
+      <Author>Brad Turner</Author>
+      <Shortcut>jqNamespace</Shortcut>
+      <HelpUrl>https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Description>Reference: http://enterprisejquery.com/2010/10/how-good-c-habits-can-encourage-bad-javascript-habits-part-1/</Description>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>The namespace declaration</ToolTip>
+          <Default>myNamespace</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="JavaScript">
+        <![CDATA[(function( $name$, $$, undefined ) {
+            //Private Property
+            myPrivateProperty = "Private Property";
+        
+            //Public Property
+            $name$.myPublicProperty = "Publically Accessible Property";
+        
+            //Private Method
+            function myPrivateMethod () {
+            }
+        
+            //Public Method
+            $name$.myPublicMethod = function () {
+            };
+            
+        }(window.$name$ = window.$name$ || {}, jQuery ));]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
