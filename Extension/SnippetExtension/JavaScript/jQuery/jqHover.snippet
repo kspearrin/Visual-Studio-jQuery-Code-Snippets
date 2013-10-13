@@ -1,0 +1,34 @@
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.2.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>jQuery: hover()</Title>
+      <Author>John Sheehan (@johnsheehan)</Author>
+      <Shortcut>jqHover</Shortcut>
+      <HelpUrl>https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>selector</ID>
+          <ToolTip>jQuery selector</ToolTip>
+          <Default>selector</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="JavaScript">
+        <![CDATA[
+$$($selector$).hover(
+    function () {
+        // over
+        $end$
+    },
+    function () {
+        // out
+    }
+);]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
