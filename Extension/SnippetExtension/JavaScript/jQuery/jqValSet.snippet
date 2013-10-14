@@ -1,0 +1,31 @@
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.2.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>jQuery: Set the value for selected element(s)</Title>
+      <Author>John Sheehan (@johnsheehan)</Author>
+      <Shortcut>jqValSet</Shortcut>
+      <HelpUrl>https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>selector</ID>
+          <ToolTip>Element(s) to be modified</ToolTip>
+          <Default>selector</Default>
+        </Literal>
+        <Literal>
+          <ID>val</ID>
+          <ToolTip>Value to be set</ToolTip>
+          <Default>val</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="JavaScript">
+        <![CDATA[$$($selector$).val($val$);$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
+

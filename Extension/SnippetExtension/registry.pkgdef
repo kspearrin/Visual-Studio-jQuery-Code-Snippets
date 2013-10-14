@@ -1,0 +1,8 @@
+﻿
+// JavaScript
+[$RootKey$\Languages\CodeExpansions\JavaScript\Paths]
+"jQuery"="$PackageFolder$\\JavaScript\\jQuery"
+
+// HTML
+[$RootKey$\Languages\CodeExpansions\HTML\Paths]
+"jQuery"="$PackageFolder$\\HTML\\jQuery"
