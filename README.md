@@ -21,9 +21,8 @@ There are over 130 code snippets for jQuery included. You can view a listing of 
 
 ## Changelog
 
-**v1.3**
-- Added VSIX extension for easy installation to Visual Studio (thanks @madskristensen!).
-- Added `jqNamespace` snippet.
+**v1.4**
+- 
 
 [Previous Versions](https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets/wiki/Release-Notes)
 
