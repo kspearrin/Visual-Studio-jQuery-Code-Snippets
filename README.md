@@ -13,7 +13,7 @@ Most of these snippets were originally developed by John Sheehan (http://jquerys
 5. Restart Visual Studio.
 6. Start [using the code snippets](https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets/wiki/Using-Code-Snippets).
 
-You can also download the extension on the [Visual Studio Gallery](http://visualstudiogallery.msdn.microsoft.com/577b9c03-71fb-417b-bcbb-94b6d3d326b8).
+You can also download and install the extension from the [Visual Studio Gallery](http://visualstudiogallery.msdn.microsoft.com/577b9c03-71fb-417b-bcbb-94b6d3d326b8).
 
 ## Snippet Listing
 
