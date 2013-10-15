@@ -22,7 +22,7 @@ There are over 130 code snippets for jQuery included. You can view a listing of 
 ## Changelog
 
 **v1.4**
-- 
+- example
 
 [Previous Versions](https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets/wiki/Release-Notes)
 
