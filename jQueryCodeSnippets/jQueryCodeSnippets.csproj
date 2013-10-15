@@ -4,9 +4,9 @@
     <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-		<StartAction>Program</StartAction>
-		<StartProgram>$(DevEnvDir)\devenv.exe</StartProgram>
-		<StartArguments>/rootsuffix Exp</StartArguments>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(DevEnvDir)\devenv.exe</StartProgram>
+    <StartArguments>/rootsuffix Exp</StartArguments>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -17,8 +17,8 @@
     <ProjectGuid>{C1131DC7-264F-467E-90E2-ED2ED49BE43F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SnippetExtension</RootNamespace>
-    <AssemblyName>SnippetExtension</AssemblyName>
+    <RootNamespace>jQueryCodeSnippets</RootNamespace>
+    <AssemblyName>jQueryCodeSnippets</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
@@ -444,11 +444,16 @@
     <Content Include="HTML\jQuery\jqScriptValidateUnobtrusiveCdnMs.snippet">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <None Include="JavaScript\jQuery\jqNamespace.snippet" />
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="preview.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Content Include="registry.pkgdef">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
