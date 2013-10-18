@@ -11,20 +11,20 @@ Most of these snippets were originally developed by John Sheehan (http://jquerys
 3. Search **Online** for "jquery code snippets".
 4. Select the "jQuery Code Snippets" extension and click **Install**.
 5. Restart Visual Studio.
-6. Start [using the code snippets](https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets/wiki/Using-Code-Snippets).
+6. Start [using the code snippets](https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets/wiki/Using-Code-Snippets).
 
 You can also download and install the extension from the [Visual Studio Gallery](http://visualstudiogallery.msdn.microsoft.com/577b9c03-71fb-417b-bcbb-94b6d3d326b8).
 
 ## Snippet Listing
 
-There are over 130 code snippets for jQuery included. You can view a listing of all of these snippets on the project wiki here: https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets/wiki/Snippet-Listing
+There are over 130 code snippets for jQuery included. You can view a listing of all of these snippets on the project wiki here: https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets/wiki/Snippet-Listing
 
 ## Changelog
 
 **v1.4**
-- example
+- item
 
-[Previous Versions](https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets/wiki/Release-Notes)
+[Previous Versions](https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets/wiki/Release-Notes)
 
 ## Contributing
 
