@@ -1,31 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: Append the content to the selected element(s)</Title>
+      <Title>jqAppend</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqAppend</Shortcut>
+      <Description>Insert content, specified by the parameter, to the end of each element in the set of matched elements.</Description>
       <HelpUrl>https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqAppend</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>Element(s) to be modified</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
+        <Literal Editable="true">
           <ID>content</ID>
           <ToolTip>Content to be appended</ToolTip>
           <Default>content</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).append($content$);$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).append($content$);$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

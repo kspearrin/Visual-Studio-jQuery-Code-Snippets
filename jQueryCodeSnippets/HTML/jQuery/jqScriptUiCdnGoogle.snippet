@@ -1,26 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: script tag for jQuery UI using Google's CDN</Title>
+      <Title>jqScriptUiCdnGoogle</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-	  <HelpUrl>https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Description>A script tag with a jQuery UI src using Google's CDN.</Description>
+      <HelpUrl>https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
       <Shortcut>jqScriptUiCdnGoogle</Shortcut>
     </Header>
     <Snippet>
-	  <Declarations>
-        <Literal>
+      <Declarations>
+        <Literal Editable="true">
           <ID>version</ID>
           <ToolTip>Library version number</ToolTip>
-          <Default>1.10.0</Default>
+          <Default>1.10.4</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="html">
-        <![CDATA[<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/$version$/jquery-ui.min.js"></script>
-$end$]]>
-      </Code>
+      <Code Language="html"><![CDATA[<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/$version$/jquery-ui.min.js"></script>
+$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

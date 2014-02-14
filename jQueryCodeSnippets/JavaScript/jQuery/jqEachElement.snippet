@@ -1,29 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: $(selector).each() template</Title>
+      <Title>jqEachElement</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqEachElement</Shortcut>
+      <Description>Iterate over a jQuery object, executing a function for each matched element. </Description>
       <HelpUrl>https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqEachElement</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>The elements to loop over</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[
-$$($selector$).each(function (index, domEle) {
-    // domEle == this
+      <Code Language="javascript"><![CDATA[$$($selector$).each(function (index, element) {
+    // element == this
     $end$
-});]]>
-      </Code>
+});]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

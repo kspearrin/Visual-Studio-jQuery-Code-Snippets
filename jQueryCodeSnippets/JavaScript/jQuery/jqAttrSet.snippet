@@ -1,36 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: Set attribute value on element(s)</Title>
+      <Title>jqAttrSet</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqAttrSet</Shortcut>
+      <Description>Set one or more attributes for the set of matched elements.</Description>
       <HelpUrl>https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqAttrSet</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>Elements to set attribute on</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
-          <ID>name</ID>
-          <ToolTip>Name of attribute</ToolTip>
-          <Default>name</Default>
+        <Literal Editable="true">
+          <ID>attributeName</ID>
+          <ToolTip>The name of the attribute to set.</ToolTip>
+          <Default>attributeName</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
+        <Literal Editable="true">
           <ID>value</ID>
-          <ToolTip>Value to set</ToolTip>
+          <ToolTip>A value to set for the attribute.</ToolTip>
           <Default>value</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).attr($name$, $value$);$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).attr($attributeName$, $value$);$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

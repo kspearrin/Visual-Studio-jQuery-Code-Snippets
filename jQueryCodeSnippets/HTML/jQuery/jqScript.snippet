@@ -1,26 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: script tag with jQuery src</Title>
+      <Title>jqScript</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-	  <HelpUrl>https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Description>A script tag with a jQuery src.</Description>
+      <HelpUrl>https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
       <Shortcut>jqScript</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>path</ID>
           <ToolTip>Path to jQuery script</ToolTip>
-          <Default>/Scripts/jquery-1.9.0.min.js</Default>
+          <Default>/scripts/jquery-1.9.0.min.js</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="html">
-        <![CDATA[<script type="text/javascript" src="$path$"></script>
-$end$]]>
-      </Code>
+      <Code Language="html"><![CDATA[<script type="text/javascript" src="$path$"></script>
+$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

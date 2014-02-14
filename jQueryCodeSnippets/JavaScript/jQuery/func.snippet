@@ -1,19 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>javascript: anonymous function</Title>
+      <Title>func</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-	  <HelpUrl>https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Description>An anonymous function.</Description>
+      <HelpUrl>https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
       <Shortcut>func</Shortcut>
     </Header>
     <Snippet>
-      <Code Language="JavaScript">
-        <![CDATA[function () { $end$ }]]>
-      </Code>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>param</ID>
+          <ToolTip>Parameter</ToolTip>
+          <Default>
+          </Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="javascript"><![CDATA[function ($param$) { $end$ }]]></Code>
     </Snippet>
   </CodeSnippet>
-
 </CodeSnippets>

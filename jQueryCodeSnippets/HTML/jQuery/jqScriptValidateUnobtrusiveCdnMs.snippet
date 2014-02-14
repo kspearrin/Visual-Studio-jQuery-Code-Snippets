@@ -1,19 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: script tag for jQuery unobtrusive validation plugin using Microsoft's CDN</Title>
+      <Title>jqScriptValidateUnobtrusiveCdnMs</Title>
       <Author>Kyle Spearrin (www.kylespearrin.com)</Author>
-	  <HelpUrl>https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Description>A script tag with a jQuery unobtrusive validation plugin src using Microsoft's CDN</Description>
+      <HelpUrl>https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
       <Shortcut>jqScriptValidateUnobtrusiveCdnMs</Shortcut>
     </Header>
     <Snippet>
-      <Code Language="html">
-        <![CDATA[<script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/mvc/3.0/jquery.validate.unobtrusive.min.js"></script>
-$end$]]>
-      </Code>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>version</ID>
+          <ToolTip>Library version number</ToolTip>
+          <Default>4.0</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="html"><![CDATA[<script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/mvc/$version$/jquery.validate.unobtrusive.min.js"></script>
+$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

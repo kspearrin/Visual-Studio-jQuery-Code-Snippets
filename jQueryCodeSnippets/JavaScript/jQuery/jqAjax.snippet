@@ -1,44 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: $.ajax() template</Title>
+      <Title>jqAjax</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqAjax</Shortcut>
+      <Description>Perform an asynchronous HTTP (Ajax) request.</Description>
       <HelpUrl>https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqAjax</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>url</ID>
           <ToolTip>The URL for the request</ToolTip>
           <Default>/url</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
+        <Literal Editable="true">
           <ID>method</ID>
           <ToolTip>HTTP Method to use (GET, POST, etc.)</ToolTip>
           <Default>POST</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
+        <Literal Editable="true">
           <ID>data</ID>
           <ToolTip>Data to send (querystring)</ToolTip>
           <Default>name=John&amp;location=Boston</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
+        <Literal Editable="true">
           <ID>dataType</ID>
           <ToolTip>Options: xml|json|jsonp|text|html|script</ToolTip>
           <Default>json</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
+        <Literal Editable="true">
           <ID>url</ID>
           <ToolTip>URL to call</ToolTip>
           <Default>/url</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$.ajax({
+      <Code Language="javascript"><![CDATA[$$.ajax({
     type: "$method$",
     url: "$url$",
     data: "$data$",
@@ -46,8 +57,7 @@
     success: function(response) {
         $end$
     }
-});]]>
-      </Code>
+});]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
