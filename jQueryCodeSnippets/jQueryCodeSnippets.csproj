@@ -147,6 +147,9 @@
     <Content Include="JavaScript\jQuery\jqDocReadyShort.snippet">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <Content Include="JavaScript\jQuery\jqEach.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Content Include="JavaScript\jQuery\jqEachElement.snippet">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
@@ -238,6 +241,9 @@
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="JavaScript\jQuery\jqLoadPost.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="JavaScript\jQuery\jqMap.snippet">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="JavaScript\jQuery\jqMouseDown.snippet">
