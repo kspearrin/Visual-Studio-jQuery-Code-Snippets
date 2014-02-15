@@ -4,28 +4,21 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>Effects: show(speed, callback)</Title>
-      <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqShowFull</Shortcut>
+      <Title>jQuery: A generic iterator function</Title>
+      <Author>Graham Charles</Author>
+      <Shortcut>jqEach</Shortcut>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
     </Header>
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>selector</ID>
-          <ToolTip>jQuery selector</ToolTip>
-          <Default>selector</Default>
-        </Literal>
-        <Literal>
-          <ID>speed</ID>
-          <ToolTip>'slow', 'normal', 'fast' or milliseconds</ToolTip>
-          <Default>speed</Default>
+          <ID>collection</ID>
+          <ToolTip>Array or Object to iterate over</ToolTip>
+          <Default>collection</Default>
         </Literal>
       </Declarations>
       <Code Language="JavaScript">
-        <![CDATA[$$($selector$).show($speed$, function () {
-    $end$
-});]]>
+		<![CDATA[$$.each($collection$, function( indexInArray, valueOfElement ) { $end$ } );]]>
       </Code>
     </Snippet>
   </CodeSnippet>

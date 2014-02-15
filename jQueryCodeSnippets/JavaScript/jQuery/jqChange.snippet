@@ -1,28 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: change()</Title>
+      <Title>jqChange</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
+      <Description>Bind an event handler to the "change" JavaScript event, or trigger that event on an element.</Description>
+      <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
       <Shortcut>jqChange</Shortcut>
-      <HelpUrl>https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
-          <ToolTip>Elements to bind to</ToolTip>
+          <ToolTip>Element(s) to bind to</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).change(function (e) { 
+      <Code Language="javascript"><![CDATA[$$($selector$).change(function (e) { 
     e.preventDefault();
     $end$
-});]]>
-      </Code>
+});]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

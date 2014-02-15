@@ -4,7 +4,7 @@
         <Identity Id="0610c27c-b2d5-4d52-87fb-9dc9a0e20d53" Version="1.3" Language="en-US" Publisher="Kyle Spearrin" />
         <DisplayName>jQuery Code Snippets</DisplayName>
         <Description xml:space="preserve">130+ jQuery code snippets for Visual Studio 2012 &amp; 2013.</Description>
-        <MoreInfo>https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets</MoreInfo>
+        <MoreInfo>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</MoreInfo>
         <Icon>preview.png</Icon>
         <PreviewImage>preview.png</PreviewImage>
         <Tags>jquery, snippet, snippets</Tags>

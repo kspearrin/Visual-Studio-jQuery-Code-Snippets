@@ -4,28 +4,21 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>Effects: show(speed, callback)</Title>
-      <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqShowFull</Shortcut>
+      <Title>jQuery: Translate all items in an array or object to new array of items</Title>
+      <Author>Graham Charles</Author>
+      <Shortcut>jqMap</Shortcut>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
     </Header>
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>selector</ID>
-          <ToolTip>jQuery selector</ToolTip>
-          <Default>selector</Default>
-        </Literal>
-        <Literal>
-          <ID>speed</ID>
-          <ToolTip>'slow', 'normal', 'fast' or milliseconds</ToolTip>
-          <Default>speed</Default>
+          <ID>arrayOrObject</ID>
+          <ToolTip>Array or Object to be mapped</ToolTip>
+          <Default>arrayOrObject</Default>
         </Literal>
       </Declarations>
       <Code Language="JavaScript">
-        <![CDATA[$$($selector$).show($speed$, function () {
-    $end$
-});]]>
+        <![CDATA[$$.map($arrayOrObject$, function( elementOrValue, indexOrKey ) { $end$ } );]]>
       </Code>
     </Snippet>
   </CodeSnippet>

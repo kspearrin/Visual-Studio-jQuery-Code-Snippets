@@ -1,33 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: bind(eventName, function)</Title>
+      <Title>jqBind</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqBindWithData</Shortcut>
-      <HelpUrl>https://github.com/xxkylexx/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Description>Attach a handler to an event for the elements.</Description>
+      <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqBind</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
-          <ToolTip>Elements to bind to</ToolTip>
+          <ToolTip>Element(s) to bind to</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
-          <ID>eventName</ID>
-          <ToolTip>Event name to bind</ToolTip>
-          <Default>eventName</Default>
+        <Literal Editable="true">
+          <ID>eventType</ID>
+          <ToolTip>A string containing one or more DOM event types, such as "click" or "submit," or custom event names.</ToolTip>
+          <Default>eventType</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).bind($eventName$, function(e){
+      <Code Language="javascript"><![CDATA[$$($selector$).bind($eventType$, function(e){
     $end$
-});]]>
-      </Code>
+});]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-
