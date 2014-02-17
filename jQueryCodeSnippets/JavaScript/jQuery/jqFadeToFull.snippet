@@ -1,38 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>Effects: fadeTo(speed, opacity, callback)</Title>
+      <Title>jqFadeToFull</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqFadeToFull</Shortcut>
+      <Description>Adjust the opacity of the matched elements.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqFadeToFull</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>jQuery selector</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
-          <ID>speed</ID>
-          <ToolTip>'slow', 'normal', 'fast' or milliseconds</ToolTip>
-          <Default>speed</Default>
+        <Literal Editable="true">
+          <ID>duration</ID>
+          <ToolTip>A string or number determining how long the animation will run.</ToolTip>
+          <Default>duration</Default>
+          <Function>
+          </Function>
         </Literal>
-         <Literal>
+        <Literal Editable="true">
           <ID>opacity</ID>
-          <ToolTip>Opacity to fade to between 0 and 1</ToolTip>
+          <ToolTip>A number between 0 and 1 denoting the target opacity.</ToolTip>
           <Default>opacity</Default>
+          <Function>
+          </Function>
         </Literal>
-     </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).fadeTo($speed$, $opacity$, function () {
+      </Declarations>
+      <Code Language="javascript"><![CDATA[$$($selector$).fadeTo($duration$, $opacity$, function () {
     $end$
-});]]>
-      </Code>
+});]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

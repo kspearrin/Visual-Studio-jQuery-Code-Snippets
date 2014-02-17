@@ -450,8 +450,12 @@
     <Content Include="HTML\jQuery\jqScriptValidateUnobtrusiveCdnMs.snippet">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <None Include="JavaScript\jQuery\jqDataSetObj.snippet" />
-    <None Include="JavaScript\jQuery\jqNamespace.snippet" />
+    <Content Include="JavaScript\jQuery\jqDataSetObj.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="JavaScript\jQuery\jqNamespace.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
