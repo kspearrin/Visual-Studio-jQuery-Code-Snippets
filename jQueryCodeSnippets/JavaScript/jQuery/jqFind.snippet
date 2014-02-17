@@ -1,31 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: Get (find) the descendants of each element in the current set of matched elements</Title>
+      <Title>jqFind</Title>
       <Author>Kyle Spearrin (www.kylespearrin.com)</Author>
-      <Shortcut>jqFind</Shortcut>
+      <Description>Get the descendants of each element in the current set of matched elements, filtered by a selector, jQuery object, or element.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqFind</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>Element(s) containing descendant element(s) to be found</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
-          <ID>element</ID>
-          <ToolTip>Descendant element(s) to be found (selector, jQuery Object, element)</ToolTip>
+        <Literal Editable="true">
+          <ID>selector2</ID>
+          <ToolTip>A string containing a selector expression to match elements against.</ToolTip>
           <Default>selector2</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).find($element$);$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).find($selector2$);$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

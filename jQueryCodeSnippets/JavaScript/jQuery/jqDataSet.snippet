@@ -1,36 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: Set data value on element(s)</Title>
+      <Title>jqDataSet</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqDataSet</Shortcut>
+      <Description>Store arbitrary data associated with the matched elements.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqDataSet</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>Element(s) to set data on</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
-          <ID>name</ID>
-          <ToolTip>Name of data value</ToolTip>
-          <Default>name</Default>
+        <Literal Editable="true">
+          <ID>key</ID>
+          <ToolTip>A string naming the piece of data to set.</ToolTip>
+          <Default>key</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
+        <Literal Editable="true">
           <ID>value</ID>
-          <ToolTip>Value to set</ToolTip>
+          <ToolTip>The new data value; it can be any Javascript type including Array or Object.</ToolTip>
           <Default>value</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).data($name$, $value$);$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).data($key$, $value$);$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

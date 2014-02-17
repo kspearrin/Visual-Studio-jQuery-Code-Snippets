@@ -1,26 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: die()</Title>
+      <Title>jqDieAll</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqDieAll</Shortcut>
+      <Description>Remove event handlers previously attached using .live() from the elements.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqDieAll</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>Element(s) to remove bindings</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).die();$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).die();$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

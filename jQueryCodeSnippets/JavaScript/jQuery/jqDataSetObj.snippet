@@ -5,30 +5,40 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jqCssGet</Title>
+      <Title>jqDataSetObj</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Description>Get the computed style properties for the first element in the set of matched elements.</Description>
+      <Description>Store arbitrary data associated with the matched elements.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
-      <Shortcut>jqCssGet</Shortcut>
+      <Shortcut>jqDataSetObj</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
           <ID>selector</ID>
-          <ToolTip>Element containing style to be retrieved</ToolTip>
+          <ToolTip>Element(s) to set data on</ToolTip>
           <Default>selector</Default>
           <Function>
           </Function>
         </Literal>
         <Literal Editable="true">
-          <ID>propertyName</ID>
-          <ToolTip>A CSS property.</ToolTip>
-          <Default>propertyName</Default>
+          <ID>key</ID>
+          <ToolTip>A string naming the piece of data to set.</ToolTip>
+          <Default>key</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>value</ID>
+          <ToolTip>The new data value; it can be any Javascript type including Array or Object.</ToolTip>
+          <Default>value</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="javascript"><![CDATA[$$($selector$).css($propertyName$);$end$]]></Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).data({
+    $key$: $value$
+    $end$
+});]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

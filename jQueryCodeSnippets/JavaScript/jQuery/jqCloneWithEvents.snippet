@@ -1,26 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: Clone matched DOM Elements, and all their event handlers, and select the clones.</Title>
+      <Title>jqCloneWithEvents</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqCloneWithEvents</Shortcut>
+      <Description>Create a deep copy of the set of matched elements.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqCloneWithEvents</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>Element(s) to be cloned</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).clone(true);$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).clone(true);$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

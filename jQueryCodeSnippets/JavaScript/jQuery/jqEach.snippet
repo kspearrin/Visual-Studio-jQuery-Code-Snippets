@@ -1,26 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: A generic iterator function</Title>
+      <Title>jqEach</Title>
       <Author>Graham Charles</Author>
-      <Shortcut>jqEach</Shortcut>
+      <Description>A generic iterator function, which can be used to seamlessly iterate over both objects and arrays. Arrays and array-like objects with a length property (such as a function's arguments object) are iterated by numeric index, from 0 to length-1. Other objects are iterated via their named properties.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqEach</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>collection</ID>
-          <ToolTip>Array or Object to iterate over</ToolTip>
+          <ToolTip>The object or array to iterate over.</ToolTip>
           <Default>collection</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-		<![CDATA[$$.each($collection$, function( indexInArray, valueOfElement ) { $end$ } );]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$.each($collection$, function(indexInArray, valueOfElement) { 
+    $end$ 
+});]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

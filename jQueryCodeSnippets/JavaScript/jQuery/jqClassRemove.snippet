@@ -1,31 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: Remove a class to the selected elements</Title>
+      <Title>jqClassRemove</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqClassRemove</Shortcut>
+      <Description>Remove a single class, multiple classes, or all classes from each element in the set of matched elements.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqClassRemove</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>Element(s) to modify</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
-          <ID>name</ID>
-          <ToolTip>Name of class to remove</ToolTip>
-          <Default>name</Default>
+        <Literal Editable="true">
+          <ID>className</ID>
+          <ToolTip>One or more space-separated classes to be removed from the class attribute of each matched element.</ToolTip>
+          <Default>className</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).removeClass($name$);$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).removeClass($className$);$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

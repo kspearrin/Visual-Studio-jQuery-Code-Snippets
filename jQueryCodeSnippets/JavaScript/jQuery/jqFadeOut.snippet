@@ -1,26 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>Effects: fadeOut()</Title>
+      <Title>jqFadeOut</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqFadeOut</Shortcut>
+      <Description>Hide the matched elements by fading them to transparent.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqFadeOut</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
-          <ToolTip>jQuery selector</ToolTip>
+          <ToolTip>Element(s) to fade out.</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).fadeOut();$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).fadeOut();$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

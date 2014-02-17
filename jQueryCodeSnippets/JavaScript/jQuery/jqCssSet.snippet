@@ -1,36 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: Set a single style property to a value on all matched elements.</Title>
+      <Title>jqCssSet</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqCssSet</Shortcut>
+      <Description>Set one or more CSS properties for the set of matched elements.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqCssSet</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>Element(s) to set style properties on</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
-          <ID>name</ID>
-          <ToolTip>Name of style property</ToolTip>
-          <Default>name</Default>
+        <Literal Editable="true">
+          <ID>propertyName</ID>
+          <ToolTip>A CSS property name.</ToolTip>
+          <Default>propertyName</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
+        <Literal Editable="true">
           <ID>value</ID>
-          <ToolTip>Value to set</ToolTip>
+          <ToolTip>A value to set for the property.</ToolTip>
           <Default>value</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).css($name$, $value$);$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).css($propertyName$, $value$);$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

@@ -1,26 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: Remove all child nodes from the set of matched elements.</Title>
+      <Title>jqEmpty</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqEmpty</Shortcut>
+      <Description>Remove all child nodes of the set of matched elements from the DOM.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqEmpty</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>Element(s) to be modified</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).empty();$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).empty();$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

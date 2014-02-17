@@ -1,31 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: die(eventName)</Title>
+      <Title>jqDie</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqDie</Shortcut>
+      <Description>Remove event handlers previously attached using .live() from the elements.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqDie</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>Element(s) to unbind</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
-          <ID>eventName</ID>
-          <ToolTip>Event name to unbind</ToolTip>
-          <Default>eventName</Default>
+        <Literal Editable="true">
+          <ID>eventType</ID>
+          <ToolTip>A string containing a JavaScript event type, such as click or keydown.</ToolTip>
+          <Default>eventType</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).die($eventName$);$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).die($eventType$);$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

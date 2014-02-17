@@ -1,33 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>Effects: fadeIn(speed, callback)</Title>
+      <Title>jqFadeInFull</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqFadeInFull</Shortcut>
+      <Description>Display the matched elements by fading them to opaque.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqFadeInFull</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
-          <ToolTip>jQuery selector</ToolTip>
+          <ToolTip>Element(s) to fade in.</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
-          <ID>speed</ID>
-          <ToolTip>'slow', 'normal', 'fast' or milliseconds</ToolTip>
-          <Default>speed</Default>
+        <Literal Editable="true">
+          <ID>duration</ID>
+          <ToolTip>A string or number determining how long the animation will run.</ToolTip>
+          <Default>duration</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).fadeIn($speed$, function () {
+      <Code Language="javascript"><![CDATA[$$($selector$).fadeIn($duration$, function () {
     $end$
-});]]>
-      </Code>
+});]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-
