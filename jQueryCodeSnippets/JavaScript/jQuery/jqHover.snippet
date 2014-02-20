@@ -1,34 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: hover()</Title>
+      <Title>jqHover</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqHover</Shortcut>
+      <Description>Bind two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqHover</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
-          <ToolTip>jQuery selector</ToolTip>
+          <ToolTip>Element(s) to select</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[
-$$($selector$).hover(
-    function () {
+      <Code Language="javascript"><![CDATA[$$($selector$).hover(function () {
         // over
         $end$
-    },
-    function () {
+    }, function () {
         // out
     }
-);]]>
-      </Code>
+);]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

@@ -1,29 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: keypress()</Title>
+      <Title>jqKeyPress</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqKeyPress</Shortcut>
+      <Description>Bind an event handler to the "keypress" JavaScript event, or trigger that event on an element.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqKeyPress</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>Element(s) to bind to</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[
-$$($selector$).keypress(function (e) { 
-    var which = e.which;
+      <Code Language="javascript"><![CDATA[$$($selector$).keypress(function (e) { 
     $end$
-});]]>
-      </Code>
+});]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

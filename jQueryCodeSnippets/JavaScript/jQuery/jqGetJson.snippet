@@ -1,35 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: $.getJSON() template</Title>
+      <Title>jqGetJson</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqGetJson</Shortcut>
+      <Description>Load JSON-encoded data from the server using a GET HTTP request.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqGetJson</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>url</ID>
-          <ToolTip>The URL for the request</ToolTip>
+          <ToolTip>A string containing the URL to which the request is sent.</ToolTip>
           <Default>/url</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
+        <Literal Editable="true">
           <ID>data</ID>
-          <ToolTip>Data to send (querystring)</ToolTip>
+          <ToolTip>A plain object or string that is sent to the server with the request.</ToolTip>
           <Default>{ name: "value" }</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[
-$$.getJSON("$url$", $data$,
-    function(data) {
+      <Code Language="javascript"><![CDATA[$$.getJSON("$url$", $data$,
+    function(data, textStatus, jqXHR) {
         $end$
     }
-);]]>
-      </Code>
+);]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

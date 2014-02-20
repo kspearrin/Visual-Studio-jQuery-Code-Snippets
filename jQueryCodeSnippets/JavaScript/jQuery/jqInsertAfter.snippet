@@ -1,31 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: Insert all of the matched elements after another, specified, set of elements.</Title>
+      <Title>jqInsertAfter</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqInsertAfter</Shortcut>
+      <Description>Insert every element in the set of matched elements after the target.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqInsertAfter</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>Element(s) to be modified</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
-          <ID>content</ID>
-          <ToolTip>Content to be inserted</ToolTip>
-          <Default>content</Default>
+        <Literal Editable="true">
+          <ID>target</ID>
+          <ToolTip>A selector, element, array of elements, HTML string, or jQuery object; the matched set of elements will be inserted after the element(s) specified by this parameter.</ToolTip>
+          <Default>target</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($content$).insertAfter($selector$);$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($target$).insertAfter($selector$);$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

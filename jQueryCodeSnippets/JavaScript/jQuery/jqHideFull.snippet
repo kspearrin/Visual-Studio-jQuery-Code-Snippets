@@ -1,33 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>Effects: hide(speed, callback)</Title>
+      <Title>jqHideFull</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqHideFull</Shortcut>
+      <Description>Hide the matched elements.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqHideFull</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
-          <ToolTip>jQuery selector</ToolTip>
+          <ToolTip>Element(s) to select.</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
-          <ID>speed</ID>
-          <ToolTip>'slow', 'normal', 'fast' or milliseconds</ToolTip>
-          <Default>speed</Default>
+        <Literal Editable="true">
+          <ID>duration</ID>
+          <ToolTip>A string or number determining how long the animation will run.</ToolTip>
+          <Default>"slow"</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).hide($speed$, function () {
+      <Code Language="javascript"><![CDATA[$$($selector$).hide($duration$, function () {
     $end$
-});]]>
-      </Code>
+});]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

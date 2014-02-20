@@ -234,9 +234,6 @@
     <Content Include="JavaScript\jQuery\jqKeyUp.snippet">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="JavaScript\jQuery\jqLive.snippet">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
     <Content Include="JavaScript\jQuery\jqLoadGet.snippet">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
@@ -454,6 +451,9 @@
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="JavaScript\jQuery\jqNamespace.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="JavaScript\jQuery\jqOn.snippet">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <None Include="source.extension.vsixmanifest">

@@ -1,39 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: Ajax: load() with GET</Title>
+      <Title>jqLoadGet</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqLoadGet</Shortcut>
+      <Description>Load data from the server and place the returned HTML into the matched element.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqLoadGet</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
-          <ToolTip>jQuery selector</ToolTip>
+          <ToolTip>Element to select</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
+        <Literal Editable="true">
           <ID>url</ID>
-          <ToolTip>The URL for the request</ToolTip>
+          <ToolTip>A string containing the URL to which the request is sent.</ToolTip>
           <Default>/url</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
+        <Literal Editable="true">
           <ID>data</ID>
-          <ToolTip>Data to send (querystring)</ToolTip>
-          <Default>name=value&amp;name2=123</Default>
+          <ToolTip>A string that is sent to the server with the request.</ToolTip>
+          <Default>name=value&amp;name2=value2</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-<![CDATA[
-$$($selector$).load("$url$", "$data$", function (text, status, request) {
+      <Code Language="javascript"><![CDATA[$$($selector$).load("$url$", "$data$", function (response, status, request) {
     this; // dom element
     $end$
-});]]>
-      </Code>
+});]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

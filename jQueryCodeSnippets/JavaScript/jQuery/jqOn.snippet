@@ -5,23 +5,30 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jqInnerHeight</Title>
+      <Title>jqAfter</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Description>Get the current computed height for the first element in the set of matched elements, including padding but not border.</Description>
+      <Description>Insert content, specified by the parameter, after each element in the set of matched elements.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
-      <Shortcut>jqInnerHeight</Shortcut>
+      <Shortcut>jqAfter</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
           <ID>selector</ID>
-          <ToolTip>Element to select</ToolTip>
+          <ToolTip>Element(s) to be modified</ToolTip>
           <Default>selector</Default>
           <Function>
           </Function>
         </Literal>
+        <Literal Editable="true">
+          <ID>content</ID>
+          <ToolTip>HTML string, DOM element, array of elements, or jQuery object to insert after each element in the set of matched elements.</ToolTip>
+          <Default>content</Default>
+          <Function>
+          </Function>
+        </Literal>
       </Declarations>
-      <Code Language="javascript"><![CDATA[$$($selector$).innerHeight();$end$]]></Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).after($content$);$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
