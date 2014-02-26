@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jQueryCodeSnippets", "jQueryCodeSnippets\jQueryCodeSnippets.csproj", "{C1131DC7-264F-467E-90E2-ED2ED49BE43F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{90164978-E461-4BD8-8F21-15B199E7AFB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{C1131DC7-264F-467E-90E2-ED2ED49BE43F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1131DC7-264F-467E-90E2-ED2ED49BE43F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1131DC7-264F-467E-90E2-ED2ED49BE43F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90164978-E461-4BD8-8F21-15B199E7AFB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90164978-E461-4BD8-8F21-15B199E7AFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90164978-E461-4BD8-8F21-15B199E7AFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90164978-E461-4BD8-8F21-15B199E7AFB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
