@@ -1,31 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: Prepend the content to the selected element(s)</Title>
+      <Title>jqPrependTo</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqPrependTo</Shortcut>
+      <Description>Insert every element in the set of matched elements to the beginning of the target.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqPrependTo</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>Element(s) to be modified</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
+        <Literal Editable="true">
           <ID>content</ID>
-          <ToolTip>Content to be prepended</ToolTip>
+          <ToolTip>DOM element, array of elements, HTML string, or jQuery object to insert at the beginning of each element in the set of matched elements.</ToolTip>
           <Default>content</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($content$).prependTo($selector$);$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($content$).prependTo($selector$);$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

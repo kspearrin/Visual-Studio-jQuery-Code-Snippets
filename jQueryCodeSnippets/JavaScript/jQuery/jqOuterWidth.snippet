@@ -1,31 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: Gets the outer width of the first matched element.</Title>
+      <Title>jqOuterWidth</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqOuterWidth</Shortcut>
+      <Description>Get the current computed width for the first element in the set of matched elements, including padding and border.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqOuterWidth</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>jQuery selector</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
-          <ID>includeMarginBool</ID>
-          <ToolTip>Boolean value indicating whether or not to include margin</ToolTip>
-          <Default>includeMarginBool</Default>
+        <Literal Editable="true">
+          <ID>includeMargin</ID>
+          <ToolTip>A Boolean indicating whether to include the element's margin in the calculation.</ToolTip>
+          <Default>includeMargin</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).outerWidth($includeMarginBool$);]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).outerWidth($includeMargin$);]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

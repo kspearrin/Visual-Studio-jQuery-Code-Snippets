@@ -1,35 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: triggerHandler(eventName, data)</Title>
+      <Title>jqTriggerHandlerWithData</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqTriggerHandlerWithData</Shortcut>
+      <Description>Execute all handlers attached to an element for an event.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqTriggerHandlerWithData</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
-          <ID>eventName</ID>
-          <ToolTip>Name of event to trigger</ToolTip>
-          <Default>eventName</Default>
+        <Literal Editable="true">
+          <ID>eventType</ID>
+          <ToolTip>A string containing a JavaScript event type, such as click or submit.</ToolTip>
+          <Default>eventType</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
+        <Literal Editable="true">
           <ID>name</ID>
-          <ToolTip>Name of property</ToolTip>
-          <Default>eventName</Default>
+          <ToolTip>Parameter name</ToolTip>
+          <Default>name</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
+        <Literal Editable="true">
           <ID>value</ID>
-          <ToolTip>Property value</ToolTip>
+          <ToolTip>Parameter value</ToolTip>
           <Default>value</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>selector</ID>
+          <ToolTip>Element(s) to bind to</ToolTip>
+          <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).triggerHandler($eventName$, { $name$: $value$ });$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).triggerHandler($eventType$, { $name$: $value$ });$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

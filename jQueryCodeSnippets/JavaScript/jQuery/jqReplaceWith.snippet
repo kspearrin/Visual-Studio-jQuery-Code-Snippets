@@ -1,31 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: Replaces all matched elements with the specified HTML or DOM elements.</Title>
+      <Title>jqReplaceWith</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqReplaceWith</Shortcut>
+      <Description>Replace each element in the set of matched elements with the provided new content and return the set of elements that was removed.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqReplaceWith</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>Element(s) to be modified</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
-          <ID>content</ID>
-          <ToolTip>Content to use as replacement</ToolTip>
-          <Default>content</Default>
+        <Literal Editable="true">
+          <ID>newContent</ID>
+          <ToolTip>The content to insert. May be an HTML string, DOM element, array of DOM elements, or jQuery object.</ToolTip>
+          <Default>newContent</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).replaceWith($content$);$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).replaceWith($newContent$);$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

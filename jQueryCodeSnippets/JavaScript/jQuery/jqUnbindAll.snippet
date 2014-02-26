@@ -1,26 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: unbind()</Title>
+      <Title>jqUnbindAll</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqUnbindAll</Shortcut>
+      <Description>Remove a previously-attached event handler from the elements.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqUnbindAll</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>Element(s) to unbind</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).unbind();$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).unbind();$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

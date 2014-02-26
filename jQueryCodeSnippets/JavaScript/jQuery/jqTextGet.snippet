@@ -1,26 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: Retrieve text content from element(s)</Title>
+      <Title>jqTextGet</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqTextGet</Shortcut>
+      <Description>Get the combined text contents of each element in the set of matched elements, including their descendants.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqTextGet</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>Element(s) to be retrieved</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).text();$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).text();$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

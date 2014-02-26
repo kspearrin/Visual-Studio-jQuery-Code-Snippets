@@ -1,26 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: Gets the scroll top offset of the first matched element.</Title>
+      <Title>jqScrollTopGet</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqScrollTopGet</Shortcut>
+      <Description>Get the current vertical position of the scroll bar for the first element in the set of matched elements or set the vertical position of the scroll bar for every matched element.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqScrollTopGet</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
-          <ToolTip>jQuery selector</ToolTip>
+          <ToolTip>Element to bind to</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).scrollTop();$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).scrollTop();$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

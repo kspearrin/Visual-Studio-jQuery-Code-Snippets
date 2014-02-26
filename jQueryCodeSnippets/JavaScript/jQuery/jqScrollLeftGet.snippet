@@ -1,26 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: Gets the scroll left offset of the first matched element.</Title>
+      <Title>jqScrollLeftGet</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqScrollLeftGet</Shortcut>
+      <Description>Get the current horizontal position of the scroll bar for the first element in the set of matched elements.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqScrollLeftGet</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
-          <ToolTip>jQuery selector</ToolTip>
+          <ToolTip>Element to bind to</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).scrollLeft();$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).scrollLeft();$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

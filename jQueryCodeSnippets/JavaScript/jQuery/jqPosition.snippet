@@ -1,30 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: Gets the top and left position of an element relative to its offset parent.</Title>
+      <Title>jqPosition</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqPosition</Shortcut>
+      <Description>Get the current coordinates of the first element in the set of matched elements, relative to the offset parent.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqPosition</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
-          <ToolTip>jQuery selector</ToolTip>
+          <ToolTip>Element to bind to</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[
-var position = $$($selector$).position();
+      <Code Language="javascript"><![CDATA[var position = $$($selector$).position();
 var top = position.top;
 var left = position.left;
-$end$]]>
-      </Code>
+$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

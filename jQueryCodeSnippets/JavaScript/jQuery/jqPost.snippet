@@ -1,41 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: $.post() template</Title>
+      <Title>jqPost</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqPost</Shortcut>
+      <Description>Load data from the server using a HTTP POST request.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqPost</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>url</ID>
-          <ToolTip>The URL for the request</ToolTip>
+          <ToolTip>A string containing the URL to which the request is sent.</ToolTip>
           <Default>/url</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
+        <Literal Editable="true">
           <ID>data</ID>
-          <ToolTip>Data to send (form values)</ToolTip>
+          <ToolTip>A plain object or string that is sent to the server with the request.</ToolTip>
           <Default>{ name: "value" }</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
-          <ID>responseFormat</ID>
-          <ToolTip>Options: xml|json|jsonp|text|html|script</ToolTip>
-          <Default>selector</Default>
+        <Literal Editable="true">
+          <ID>dataType</ID>
+          <ToolTip>The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).</ToolTip>
+          <Default>dataType</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[
-$$.post("$url$", $data$,
-    function(data, status) {
+      <Code Language="javascript"><![CDATA[$$.post("$url$", $data$,
+    function(data, textStatus, jqXHR) {
         $end$
     },
-    "$responseFormat$"
-);]]>
-      </Code>
+    "$dataType$"
+);]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

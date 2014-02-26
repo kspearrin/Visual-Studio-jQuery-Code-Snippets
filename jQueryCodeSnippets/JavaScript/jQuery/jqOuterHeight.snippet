@@ -1,31 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: Gets the outer height of the first matched element.</Title>
+      <Title>jqOuterHeight</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqOuterHeight</Shortcut>
+      <Description>Get the current computed height for the first element in the set of matched elements, including padding, border, and optionally margin. Returns a number (without "px") representation of the value or null if called on an empty set of elements.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqOuterHeight</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
-          <ToolTip>jQuery selector</ToolTip>
+          <ToolTip>Element(s) to bind to</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
-          <ID>includeMarginBool</ID>
-          <ToolTip>Boolean value indicating whether or not to include margin</ToolTip>
-          <Default>includeMarginBool</Default>
+        <Literal Editable="true">
+          <ID>includeMargin</ID>
+          <ToolTip>A Boolean indicating whether to include the element's margin in the calculation.</ToolTip>
+          <Default>includeMargin</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).outerHeight($includeMarginBool$);$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).outerHeight($includeMargin$);$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

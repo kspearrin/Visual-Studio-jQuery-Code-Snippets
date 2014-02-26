@@ -1,34 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: one(eventName, function)</Title>
+      <Title>jqOne</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqOne</Shortcut>
+      <Description>Attach a handler to an event for the elements. The handler is executed at most once per element per event type.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqOne</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>Element(s) to bind to</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
-          <ID>eventName</ID>
-          <ToolTip>Event name to bind</ToolTip>
-          <Default>eventName</Default>
+        <Literal Editable="true">
+          <ID>events</ID>
+          <ToolTip>A string containing one or more JavaScript event types, such as "click" or "submit," or custom event names.</ToolTip>
+          <Default>events</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[
-$$($selector$).one($eventName$, function(e){
+      <Code Language="javascript"><![CDATA[$$($selector$).one($events$, function(e) {
     $end$
-});]]>
-      </Code>
+});]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

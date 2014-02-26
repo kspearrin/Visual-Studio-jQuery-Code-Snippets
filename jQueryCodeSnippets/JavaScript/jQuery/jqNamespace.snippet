@@ -1,41 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: namespace template</Title>
+      <Title>jqNamespace</Title>
       <Author>Brad Turner</Author>
-      <Shortcut>jqNamespace</Shortcut>
+      <Description>A namespace template. ref: http://enterprisejquery.com/2010/10/how-good-c-habits-can-encourage-bad-javascript-habits-part-1/</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
-      <Description>Reference: http://enterprisejquery.com/2010/10/how-good-c-habits-can-encourage-bad-javascript-habits-part-1/</Description>
+      <Shortcut>jqNamespace</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>name</ID>
           <ToolTip>The namespace declaration</ToolTip>
           <Default>myNamespace</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[(function( $name$, $$, undefined ) {
-            //Private Property
-            myPrivateProperty = "Private Property";
+      <Code Language="javascript"><![CDATA[(function( $name$, $$, undefined ) {
+    // Private Property
+    myPrivateProperty = "Private Property";
         
-            //Public Property
-            $name$.myPublicProperty = "Publically Accessible Property";
+    // Public Property
+    $name$.myPublicProperty = "Publically Accessible Property";
         
-            //Private Method
-            function myPrivateMethod () {
-            }
+    // Private Method
+    function myPrivateMethod () {
         
-            //Public Method
-            $name$.myPublicMethod = function () {
-            };
-            
-        }(window.$name$ = window.$name$ || {}, jQuery ));]]>
-      </Code>
+    }
+        
+    // Public Method
+    $name$.myPublicMethod = function () {
+        
+    };  
+}(window.$name$ = window.$name$ || {}, jQuery ));]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

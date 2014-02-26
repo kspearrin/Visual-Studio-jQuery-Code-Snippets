@@ -1,31 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: Set the text content for selected element(s)</Title>
+      <Title>jqTextSet</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqTextSet</Shortcut>
+      <Description>Set the content of each element in the set of matched elements to the specified text.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqTextSet</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>Element(s) to be modified</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
-          <ID>text</ID>
-          <ToolTip>Text to set as value</ToolTip>
-          <Default>text</Default>
+        <Literal Editable="true">
+          <ID>textString</ID>
+          <ToolTip>A string of text to set as the content of each matched element.</ToolTip>
+          <Default>textString</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).text($text$);$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).text($textString$);$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

@@ -5,11 +5,11 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jqOn</Title>
-      <Author>Kyle Spearrin (www.kylespearrin.com)</Author>
-      <Description>Attach an event handler function for one or more events to the selected elements.</Description>
+      <Title>jqToggleSwitch</Title>
+      <Author>John Sheehan (@johnsheehan)</Author>
+      <Description>Display or hide the matched elements.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
-      <Shortcut>jqOn</Shortcut>
+      <Shortcut>jqToggleSwitch</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
@@ -21,16 +21,14 @@
           </Function>
         </Literal>
         <Literal Editable="true">
-          <ID>events</ID>
-          <ToolTip>One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".</ToolTip>
-          <Default>events</Default>
+          <ID>showOrHide</ID>
+          <ToolTip>A Boolean indicating whether to show or hide the elements.</ToolTip>
+          <Default>showOrHide</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="javascript"><![CDATA[$$($selector$).on($events$, function() {
-    $end$
-});]]></Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).toggle($showOrHide$);$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

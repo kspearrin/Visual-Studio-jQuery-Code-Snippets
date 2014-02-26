@@ -1,31 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: Removes all matched elements from the DOM.</Title>
+      <Title>jqRemoveExp</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqRemoveExp</Shortcut>
+      <Description>Remove the set of matched elements from the DOM.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqRemoveExp</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>Element(s) to be removed</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
+        <Literal Editable="true">
           <ID>expression</ID>
-          <ToolTip>A jQuery expression to filter the set of elements to be removed.</ToolTip>
+          <ToolTip>A selector expression that filters the set of matched elements to be removed.</ToolTip>
           <Default>expression</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).remove($expression$);$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).remove($expression$);$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

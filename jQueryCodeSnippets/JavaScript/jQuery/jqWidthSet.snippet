@@ -1,31 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: Sets the width of the first matched element.</Title>
+      <Title>jqWidthSet</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqWidthSet</Shortcut>
+      <Description>Set the CSS width of each element in the set of matched elements.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqWidthSet</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>jQuery selector</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
-          <ID>val</ID>
-          <ToolTip>A positive number representing the desired width.</ToolTip>
-          <Default>val</Default>
+        <Literal Editable="true">
+          <ID>value</ID>
+          <ToolTip>An integer representing the number of pixels, or an integer along with an optional unit of measure appended (as a string).</ToolTip>
+          <Default>value</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).width($val$);$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).width($value$);$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-

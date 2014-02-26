@@ -264,7 +264,7 @@
     <Content Include="JavaScript\jQuery\jqMouseUp.snippet">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="JavaScript\jQuery\jqOffset.snippet">
+    <Content Include="JavaScript\jQuery\jqOffsetGet.snippet">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="JavaScript\jQuery\jqOffsetParent.snippet">
@@ -366,16 +366,10 @@
     <Content Include="JavaScript\jQuery\jqToggle.snippet">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="JavaScript\jQuery\jqToggleMore.snippet">
+    <Content Include="JavaScript\jQuery\jqToggleFull.snippet">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="JavaScript\jQuery\jqToggleVis.snippet">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="JavaScript\jQuery\jqToggleVisFull.snippet">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="JavaScript\jQuery\jqToggleVisSwitch.snippet">
+    <Content Include="JavaScript\jQuery\jqToggleSwitch.snippet">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="JavaScript\jQuery\jqTrigger.snippet">
@@ -394,9 +388,6 @@
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="JavaScript\jQuery\jqUnbindAll.snippet">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="JavaScript\jQuery\jqUnbindFn.snippet">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="JavaScript\jQuery\jqUnload.snippet">
@@ -456,6 +447,8 @@
     <Content Include="JavaScript\jQuery\jqOn.snippet">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <Content Include="JavaScript\jQuery\jqSlideToggle.snippet" />
+    <Content Include="JavaScript\jQuery\jqSlideToggleFull.snippet" />
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
