@@ -1,36 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.4.0">
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jQuery: Toggle a class on the selected elements</Title>
+      <Title>jqClassToggleSwitch</Title>
       <Author>John Sheehan (@johnsheehan)</Author>
-      <Shortcut>jqclasstoggle</Shortcut>
+      <Description>Add or remove one or more classes from each element in the set of matched elements, depending on either the class's presence or the value of the switch argument.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqClassToggleSwitch</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
+        <Literal Editable="true">
           <ID>selector</ID>
           <ToolTip>Element(s) to modify</ToolTip>
           <Default>selector</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
-          <ID>name</ID>
-          <ToolTip>Name of class to toggle</ToolTip>
-          <Default>name</Default>
+        <Literal Editable="true">
+          <ID>className</ID>
+          <ToolTip>One or more class names (separated by spaces) to be toggled for each element in the matched set.</ToolTip>
+          <Default>className</Default>
+          <Function>
+          </Function>
         </Literal>
-        <Literal>
-          <ID>expression</ID>
-          <ToolTip>Expression to evaluate</ToolTip>
-          <Default>expToEvaluate</Default>
+        <Literal Editable="true">
+          <ID>switch</ID>
+          <ToolTip>A Boolean (not just truthy/falsy) value to determine whether the class should be added or removed.</ToolTip>
+          <Default>switch</Default>
+          <Function>
+          </Function>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript">
-        <![CDATA[$$($selector$).toggleClass($name$, $expression$); // toggle if expToEvaluate === true (v1.3+)$end$]]>
-      </Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).toggleClass($className$, $switch$);$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
-
