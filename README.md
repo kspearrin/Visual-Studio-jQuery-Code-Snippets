@@ -24,7 +24,7 @@ There are over 130 code snippets for jQuery included. You can view a listing of 
 **v1.4**
 - Updated all snippets to have helpful descriptions and tooltips from latest jQuery docs
 - More uniform formatting and spacing throughout snippets
-- Added `jqMap` and `jqEach` (thanks grahampcharles!), `jqDataSetObj`, `jqOn`, `jqSlideToggle`, `jqSlideToggleFull`
+- Added `jqMap` and `jqEach` (thanks @grahampcharles!), `jqDataSetObj`, `jqOn`, `jqSlideToggle`, `jqSlideToggleFull`
 - Renamed `jqClassToggleFn` -> `jqClassToggleSwitch`, `jqToggleVis*` -> `jqToggle*`, `jqOffset` -> `jqOffsetGet`
 - Removed `jqLive`, `jqToggleMore`, `jqUnbindFn`
 - Various other code cleanup and bug fixes with snippets 
