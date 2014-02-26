@@ -8,7 +8,7 @@ namespace Tests
     [TestClass]
     public class SnippetTests
     {
-        // update path to lcoal project directory
+        // update path to local project directory
         private string path = @"C:\Projects\Visual-Studio-jQuery-Code-Snippets\jQueryCodeSnippets";
 
         [TestMethod]
