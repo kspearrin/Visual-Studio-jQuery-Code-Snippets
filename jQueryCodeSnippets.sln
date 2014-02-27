@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jQueryCodeSnippets", "jQuer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{90164978-E461-4BD8-8F21-15B199E7AFB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListingBuilder", "ListingBuilder\ListingBuilder.csproj", "{C5E392D6-D12C-4361-9E5C-5358DCCCB1C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{90164978-E461-4BD8-8F21-15B199E7AFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90164978-E461-4BD8-8F21-15B199E7AFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90164978-E461-4BD8-8F21-15B199E7AFB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5E392D6-D12C-4361-9E5C-5358DCCCB1C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5E392D6-D12C-4361-9E5C-5358DCCCB1C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5E392D6-D12C-4361-9E5C-5358DCCCB1C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5E392D6-D12C-4361-9E5C-5358DCCCB1C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
