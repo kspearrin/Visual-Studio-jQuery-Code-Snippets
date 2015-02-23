@@ -24,6 +24,8 @@ There are over 130 code snippets for jQuery included. Check out the [snippet lis
 **v1.5**
 - Added VS 2015 support. Thanks @madskristensen!
 - Upgraded project files to VS 2013.
+- Updated HTML snippet default library versions to latest.
+- Added wrapping quotes to `jqWrap*` snippets.
 
 [Previous Versions](https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets/wiki/Release-Notes)
 
