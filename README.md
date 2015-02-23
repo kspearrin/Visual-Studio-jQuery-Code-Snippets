@@ -1,12 +1,12 @@
 # Visual Studio jQuery Code Snippets
 
-I have updated the popular jQuery code snippets for use in Visual Studio 2012 and 2013. See a demo video on YouTube here: http://www.youtube.com/watch?v=Escy0hbEkI8&hd=1
+I have updated the popular jQuery code snippets for use in Visual Studio 2012, 2013, and 2015. See a demo video on YouTube here: http://www.youtube.com/watch?v=Escy0hbEkI8&hd=1
 
-Most of these snippets were originally developed by John Sheehan (http://jquerysnippets.codeplex.com/) for Visual Studio 2010. Credit given where due.
+Most of these snippets were originally developed by [John Sheehan](http://jquerysnippets.codeplex.com/) for Visual Studio 2010. Credit given where due.
 
 ## Installation
 
-1. Open Visual Studio 2012/2013.
+1. Open Visual Studio 2012/2013/2015.
 2. Navigate to **Tools** > **Extensions and Updates**.
 3. Search **Online** for "jquery code snippets".
 4. Select the "jQuery Code Snippets" extension and click **Install**.
@@ -17,24 +17,16 @@ You can also download and install the extension from the [Visual Studio Gallery]
 
 ## Snippet Listing
 
-There are over 130 code snippets for jQuery included. You can view a listing of all of these snippets on the project wiki here: https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets/wiki/Snippet-Listing
+There are over 130 code snippets for jQuery included. Check out the [snippet listing](https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets/wiki/Snippet-Listing).
 
 ## Changelog
 
-**v1.4**
-- Updated all snippets to have helpful descriptions and tooltips from latest jQuery docs
-- More uniform formatting and spacing throughout snippets
-- Added `jqMap` and `jqEach` (thanks @grahampcharles), `jqDataSetObj`, `jqOn`, `jqSlideToggle`, `jqSlideToggleFull`
-- Renamed `jqClassToggleFn` -> `jqClassToggleSwitch`, `jqToggleVis*` -> `jqToggle*`, `jqOffset` -> `jqOffsetGet`
-- Removed `jqLive`, `jqToggleMore`, `jqUnbindFn`
-- Various other code cleanup and bug fixes with snippets 
+**v1.5**
+- Added VS 2015 support. Thanks @madskristensen!
+- Upgraded project files to VS 2013.
 
 [Previous Versions](https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets/wiki/Release-Notes)
 
 ## Contributing
 
 Please feel free to submit pull requests to the `dev` branch.
-
-## TODO
-
-- Add missing jQuery snippets (most of these were all created based on an old jQuery build back in the day).
