@@ -11,7 +11,7 @@ namespace Tests
         // --- CONFIGURATION ---
         private string m_path = @"..\..\..\jQueryCodeSnippets";
         private string m_helpUrl = "https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets";
-        private string m_version = "1.4.0";
+        private string m_version = "1.5.0";
         // --- END CONFIGURATION ---
 
         [Test]
