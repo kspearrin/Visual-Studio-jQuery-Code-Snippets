@@ -9,19 +9,17 @@ namespace Tests
     public class SnippetTests
     {
         // --- CONFIGURATION ---
-        private string m_path = @"../../../jQueryCodeSnippets";
-        private string m_helpUrl = "https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets";
-        private string m_version = "1.5.0";
+        private const string SnippetPath = @"../../../jQueryCodeSnippets";
+        private const string HelpUrl = "https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets";
+        private const string Version = "1.5.0";
         // --- END CONFIGURATION ---
 
         [Test]
         public void SnippetTitlesAreCorrect()
         {
-            foreach (var snippetFile in Directory.EnumerateFiles(m_path, "*.snippet", SearchOption.AllDirectories))
+            foreach (var snippetFile in Directory.EnumerateFiles(SnippetPath, "*.snippet", SearchOption.AllDirectories))
             {
-                var filePaths = snippetFile.Split(new string[] { "\\" }, StringSplitOptions.None);
-                var fileName = filePaths[filePaths.Length - 1];
-                var snippetName = fileName.Split('.')[0];
+                var snippetName = Path.GetFileNameWithoutExtension(snippetFile);
 
                 var snippetDoc = new XmlDocument();
                 snippetDoc.Load(snippetFile);
@@ -35,11 +33,9 @@ namespace Tests
         [Test]
         public void SnippetShortcutsAreCorrect()
         {
-            foreach (var snippetFile in Directory.EnumerateFiles(m_path, "*.snippet", SearchOption.AllDirectories))
+            foreach (var snippetFile in Directory.EnumerateFiles(SnippetPath, "*.snippet", SearchOption.AllDirectories))
             {
-                var filePaths = snippetFile.Split(new string[] { "\\" }, StringSplitOptions.None);
-                var fileName = filePaths[filePaths.Length - 1];
-                var snippetName = fileName.Split('.')[0];
+                var snippetName = Path.GetFileNameWithoutExtension(snippetFile);
 
                 var snippetDoc = new XmlDocument();
                 snippetDoc.Load(snippetFile);
@@ -53,7 +49,7 @@ namespace Tests
         [Test]
         public void SnippetsHaveDescriptions()
         {
-            foreach (var snippetFile in Directory.EnumerateFiles(m_path, "*.snippet", SearchOption.AllDirectories))
+            foreach (var snippetFile in Directory.EnumerateFiles(SnippetPath, "*.snippet", SearchOption.AllDirectories))
             {
                 var snippetDoc = new XmlDocument();
                 snippetDoc.Load(snippetFile);
@@ -69,7 +65,7 @@ namespace Tests
         [Test]
         public void SnippetsHaveAuthors()
         {
-            foreach (var snippetFile in Directory.EnumerateFiles(m_path, "*.snippet", SearchOption.AllDirectories))
+            foreach (var snippetFile in Directory.EnumerateFiles(SnippetPath, "*.snippet", SearchOption.AllDirectories))
             {
                 var snippetDoc = new XmlDocument();
                 snippetDoc.Load(snippetFile);
@@ -85,9 +81,7 @@ namespace Tests
         [Test]
         public void SnippetsHaveHelpUrls()
         {
-            var helpUrl = "https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets";
-
-            foreach (var snippetFile in Directory.EnumerateFiles(m_path, "*.snippet", SearchOption.AllDirectories))
+            foreach (var snippetFile in Directory.EnumerateFiles(SnippetPath, "*.snippet", SearchOption.AllDirectories))
             {
                 var snippetDoc = new XmlDocument();
                 snippetDoc.Load(snippetFile);
@@ -96,14 +90,14 @@ namespace Tests
                 Assert.IsTrue(urlNode != null);
 
                 var url = urlNode[0].InnerText;
-                Assert.IsTrue(!string.IsNullOrWhiteSpace(url) && url == helpUrl);
+                Assert.IsTrue(!string.IsNullOrWhiteSpace(url) && url == HelpUrl);
             }
         }
 
         [Test]
         public void SnippetsAreProperFormattedXml()
         {
-            foreach (var snippetFile in Directory.EnumerateFiles(m_path, "*.snippet", SearchOption.AllDirectories))
+            foreach (var snippetFile in Directory.EnumerateFiles(SnippetPath, "*.snippet", SearchOption.AllDirectories))
             {
                 var contents = File.ReadAllText(snippetFile);
                 Assert.IsTrue(contents.Contains("<?xml version=\"1.0\" encoding=\"utf-8\"?>"));
@@ -113,7 +107,7 @@ namespace Tests
         [Test]
         public void SnippetsHaveCorrectVersion()
         {
-            foreach (var snippetFile in Directory.EnumerateFiles(m_path, "*.snippet", SearchOption.AllDirectories))
+            foreach (var snippetFile in Directory.EnumerateFiles(SnippetPath, "*.snippet", SearchOption.AllDirectories))
             {
                 var snippetDoc = new XmlDocument();
                 snippetDoc.Load(snippetFile);
@@ -125,7 +119,7 @@ namespace Tests
                 Assert.IsTrue(formatAttr != null);
 
                 var format = formatAttr.InnerText;
-                Assert.IsTrue(!string.IsNullOrWhiteSpace(format) && format == m_version);
+                Assert.IsTrue(!string.IsNullOrWhiteSpace(format) && format == Version);
             }
         }
     }
