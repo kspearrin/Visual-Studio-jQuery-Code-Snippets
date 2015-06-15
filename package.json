@@ -1,0 +1,20 @@
+{
+  "name": "jQuery-Code-Snippets",
+  "version": "1.5.0",
+  "description": "130+ jQuery code snippets for Visual Studio 2012, 2013, & 2015.",
+  "homepage": "https://visualstudiogallery.msdn.microsoft.com/577b9c03-71fb-417b-bcbb-94b6d3d326b8",
+  "author": "Kyle Spearrin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets"
+  },
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-flatten": "0.0.4",
+    "gulp-msbuild": "^0.2.11",
+    "gulp-xmlpoke": "^0.2.0",
+    "gulp-xunit-runner": "^0.1.1",
+    "nuget-runner": "^0.1.5"
+  }
+}

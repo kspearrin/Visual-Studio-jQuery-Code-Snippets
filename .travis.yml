@@ -1,5 +1,0 @@
-language: csharp
-solution: jQueryCodeSnippets.sln
-script:
-  - xbuild /p:Configuration=Release jQueryCodeSnippets.sln
-  - mono ./packages/NUnit.Runners.*/tools/nunit-console.exe ./Tests/bin/Release/Tests.dll

@@ -1,0 +1,6 @@
+before_build:
+  - rd "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Amazon Web Services LLC" /s /q
+build_script:
+  - build.cmd
+test: off
+deploy: off

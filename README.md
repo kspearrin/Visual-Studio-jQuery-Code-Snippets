@@ -1,6 +1,6 @@
 # Visual Studio jQuery Code Snippets
 
-[![Build Status](https://travis-ci.org/kspearrin/Visual-Studio-jQuery-Code-Snippets.svg)](https://travis-ci.org/kspearrin/Visual-Studio-jQuery-Code-Snippets)
+[![Build status](https://ci.appveyor.com/api/projects/status/3o0b1ofu94xuqpsa?svg=true)](https://ci.appveyor.com/project/kspearrin/visual-studio-jquery-code-snippets)
 
 I have updated the popular jQuery code snippets for use in Visual Studio 2012, 2013, and 2015. See a demo video on YouTube here: <http://www.youtube.com/watch?v=Escy0hbEkI8&hd=1>
 
@@ -23,7 +23,7 @@ There are over 130 code snippets for jQuery included. Check out the [snippet lis
 
 ## Changelog
 
-**v1.5**
+**v1.5.0**
 - Added VS 2015 support. Thanks @madskristensen!
 - Upgraded project files to VS 2013.
 - Updated HTML snippet default library versions to latest.
