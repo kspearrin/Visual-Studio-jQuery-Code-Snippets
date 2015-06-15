@@ -1,6 +1,6 @@
 # Visual Studio jQuery Code Snippets
 
-I have updated the popular jQuery code snippets for use in Visual Studio 2012, 2013, and 2015. See a demo video on YouTube here: http://www.youtube.com/watch?v=Escy0hbEkI8&hd=1
+I have updated the popular jQuery code snippets for use in Visual Studio 2012, 2013, and 2015. See a demo video on YouTube here: <http://www.youtube.com/watch?v=Escy0hbEkI8&hd=1>
 
 Most of these snippets were originally developed by [John Sheehan](http://jquerysnippets.codeplex.com/) for Visual Studio 2010. Credit given where due.
 
@@ -31,4 +31,4 @@ There are over 130 code snippets for jQuery included. Check out the [snippet lis
 
 ## Contributing
 
-Please feel free to submit pull requests to the `dev` branch.
+Please feel free to submit pull requests to the `master` branch.

@@ -1,21 +1,20 @@
 ﻿using System;
 using System.IO;
 using System.Xml;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace Tests
 {
-    [TestClass]
+    [TestFixture]
     public class SnippetTests
     {
         // --- CONFIGURATION ---
-        // update path to local project directory
-        private string m_path = @"C:\Projects\Visual-Studio-jQuery-Code-Snippets\jQueryCodeSnippets";
+        private string m_path = @"..\..\..\jQueryCodeSnippets";
         private string m_helpUrl = "https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets";
         private string m_version = "1.4.0";
         // --- END CONFIGURATION ---
 
-        [TestMethod]
+        [Test]
         public void SnippetTitlesAreCorrect()
         {
             foreach (var snippetFile in Directory.EnumerateFiles(m_path, "*.snippet", SearchOption.AllDirectories))
@@ -33,7 +32,7 @@ namespace Tests
             }
         }
 
-        [TestMethod]
+        [Test]
         public void SnippetShortcutsAreCorrect()
         {
             foreach (var snippetFile in Directory.EnumerateFiles(m_path, "*.snippet", SearchOption.AllDirectories))
@@ -51,7 +50,7 @@ namespace Tests
             }
         }
 
-        [TestMethod]
+        [Test]
         public void SnippetsHaveDescriptions()
         {
             foreach (var snippetFile in Directory.EnumerateFiles(m_path, "*.snippet", SearchOption.AllDirectories))
@@ -67,7 +66,7 @@ namespace Tests
             }
         }
 
-        [TestMethod]
+        [Test]
         public void SnippetsHaveAuthors()
         {
             foreach (var snippetFile in Directory.EnumerateFiles(m_path, "*.snippet", SearchOption.AllDirectories))
@@ -83,7 +82,7 @@ namespace Tests
             }
         }
 
-        [TestMethod]
+        [Test]
         public void SnippetsHaveHelpUrls()
         {
             var helpUrl = "https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets";
@@ -101,7 +100,7 @@ namespace Tests
             }
         }
 
-        [TestMethod]
+        [Test]
         public void SnippetsAreProperFormattedXml()
         {
             foreach (var snippetFile in Directory.EnumerateFiles(m_path, "*.snippet", SearchOption.AllDirectories))
@@ -111,7 +110,7 @@ namespace Tests
             }
         }
 
-        [TestMethod]
+        [Test]
         public void SnippetsHaveCorrectVersion()
         {
             foreach (var snippetFile in Directory.EnumerateFiles(m_path, "*.snippet", SearchOption.AllDirectories))
