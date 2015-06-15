@@ -12,8 +12,8 @@ namespace ListingBuilder
     {
         static void Main(string[] args)
         {
-            string readPath = @"..\..\..\jQueryCodeSnippets";
-            string listingFilePath = @"..\..\..\SnippetListing.html";
+            string readPath = @"../../../jQueryCodeSnippets";
+            string listingFilePath = @"../../../SnippetListing.html";
             StringBuilder tableSb = new StringBuilder();
 
             tableSb.AppendLine("<table>");
