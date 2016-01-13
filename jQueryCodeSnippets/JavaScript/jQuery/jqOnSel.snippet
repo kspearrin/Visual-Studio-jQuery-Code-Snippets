@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.5.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>jqOn</Title>
+      <Author>Kyle Spearrin (www.kylespearrin.com)</Author>
+      <Description>Attach an event handler function for one or more events to the selected elements.</Description>
+      <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqOn</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>selector</ID>
+          <ToolTip>Element(s) to bind to</ToolTip>
+          <Default>selector</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>events</ID>
+          <ToolTip>One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".</ToolTip>
+          <Default>events</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="javascript"><![CDATA[$$(document).on($events$, $selector$, function () {
+    $end$
+});]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

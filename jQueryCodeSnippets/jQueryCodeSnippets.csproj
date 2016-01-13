@@ -455,6 +455,7 @@
     </Content>
     <Content Include="JavaScript\jQuery\jqSlideToggle.snippet" />
     <Content Include="JavaScript\jQuery\jqSlideToggleFull.snippet" />
+    <Content Include="JavaScript\jQuery\jqOnSel.snippet" />
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
