@@ -5,11 +5,11 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>jqOnSel</Title>
+      <Title>jqOff</Title>
       <Author>Caleb Everett (github.com/everettcaleb)</Author>
-      <Description>Attach an event handler function for one or more events to the document filtered by the selector.</Description>
+      <Description>Detach an event handler from one or more events on the selected elements.</Description>
       <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
-      <Shortcut>jqOnSel</Shortcut>
+      <Shortcut>jqOff</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
@@ -22,15 +22,13 @@
         </Literal>
         <Literal Editable="true">
           <ID>events</ID>
-          <ToolTip>One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".</ToolTip>
+          <ToolTip>One or more space-separated event types or namespaces, such as "click", "keydown.myPlugin", or ".myPlugin".</ToolTip>
           <Default>events</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="javascript"><![CDATA[$$(document).on($events$, $selector$, function () {
-    $end$
-});]]></Code>
+      <Code Language="javascript"><![CDATA[$$($selector$).off($events$);]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
