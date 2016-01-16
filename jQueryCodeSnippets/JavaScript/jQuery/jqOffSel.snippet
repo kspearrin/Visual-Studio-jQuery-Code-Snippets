@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.5.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>jqOffSel</Title>
+      <Author>Caleb Everett (github.com/everettcaleb)</Author>
+      <Description>Detach an event handler from one or more events on the document with the specified selector.</Description>
+      <HelpUrl>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</HelpUrl>
+      <Shortcut>jqOffSel</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>selector</ID>
+          <ToolTip>Element(s) to bind to</ToolTip>
+          <Default>selector</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>events</ID>
+          <ToolTip>One or more space-separated event types or namespaces, such as "click", "keydown.myPlugin", or ".myPlugin".</ToolTip>
+          <Default>events</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="javascript"><![CDATA[$$(document).off($events$, $selector$);]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
