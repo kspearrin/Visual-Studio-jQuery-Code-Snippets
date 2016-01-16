@@ -2,9 +2,7 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/3o0b1ofu94xuqpsa?svg=true)](https://ci.appveyor.com/project/kspearrin/visual-studio-jquery-code-snippets)
 
-I have updated the popular jQuery code snippets for use in Visual Studio 2012, 2013, and 2015. See a demo video on YouTube here: <http://www.youtube.com/watch?v=Escy0hbEkI8&hd=1>
-
-Most of these snippets were originally developed by [John Sheehan](http://jquerysnippets.codeplex.com/) for Visual Studio 2010. Credit given where due.
+This project hosts a collection of common jQuery code snippets for use in Visual Studio 2012, 2013, and 2015. See a demo video on YouTube here: <http://www.youtube.com/watch?v=Escy0hbEkI8&hd=1>.
 
 ## Installation
 
@@ -23,11 +21,10 @@ There are over 130 code snippets for jQuery included. Check out the [snippet lis
 
 ## Changelog
 
-**v1.5.0**
-- Added VS 2015 support. Thanks @madskristensen!
-- Upgraded project files to VS 2013.
+**v1.6.0**
+- Added `jqOff`, `jqOffSel`, and `jqOnSel` snippets. Thanks @everettcaleb!
+- Removed `type="text/javascript"` from all script tags in HTML snippets.
 - Updated HTML snippet default library versions to latest.
-- Added wrapping quotes to `jqWrap*` snippets.
 
 [Previous Versions](https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets/wiki/Release-Notes)
 

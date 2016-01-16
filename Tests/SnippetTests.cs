@@ -10,7 +10,7 @@ namespace Tests
         // --- CONFIGURATION ---
         private const string SnippetPath = @"../../../jQueryCodeSnippets";
         private const string HelpUrl = "https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets";
-        private const string Version = "1.5.0";
+        private const string Version = "1.6.0";
         // --- END CONFIGURATION ---
 
         [Fact]
