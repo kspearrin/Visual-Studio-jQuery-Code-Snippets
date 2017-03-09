@@ -2,18 +2,18 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/3o0b1ofu94xuqpsa?svg=true)](https://ci.appveyor.com/project/kspearrin/visual-studio-jquery-code-snippets)
 
-This project hosts a collection of common jQuery code snippets for use in Visual Studio 2012, 2013, and 2015. See a demo video on YouTube here: <http://www.youtube.com/watch?v=Escy0hbEkI8&hd=1>.
+This project hosts a collection of common jQuery code snippets for use in Visual Studio 2012, 2013, 2015, and 2017. See a demo video on YouTube here: <http://www.youtube.com/watch?v=Escy0hbEkI8&hd=1>.
 
 ## Installation
 
-1. Open Visual Studio 2012/2013/2015.
+1. Open Visual Studio 2012/2013/2015/2017.
 2. Navigate to **Tools** > **Extensions and Updates**.
 3. Search **Online** for "jquery code snippets".
 4. Select the "jQuery Code Snippets" extension and click **Install**.
 5. Restart Visual Studio.
 6. Start [using the code snippets](https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets/wiki/Using-Code-Snippets).
 
-You can also download and install the extension from the [Visual Studio Gallery](http://visualstudiogallery.msdn.microsoft.com/577b9c03-71fb-417b-bcbb-94b6d3d326b8).
+You can also download and install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=kspearrin.jQueryCodeSnippets).
 
 ## Snippet Listing
 
@@ -21,10 +21,8 @@ There are over 130 code snippets for jQuery included. Check out the [snippet lis
 
 ## Changelog
 
-**v1.6.0**
-- Added `jqOff`, `jqOffSel`, and `jqOnSel` snippets. Thanks @everettcaleb!
-- Removed `type="text/javascript"` from all script tags in HTML snippets.
-- Updated HTML snippet default library versions to latest.
+**v1.7.0**
+- Added VS 2017 support.
 
 [Previous Versions](https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets/wiki/Release-Notes)
 
