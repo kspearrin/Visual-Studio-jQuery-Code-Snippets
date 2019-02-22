@@ -3,7 +3,7 @@
     <Metadata>
         <Identity Id="0610c27c-b2d5-4d52-87fb-9dc9a0e20d53" Version="1.8.0" Language="en-US" Publisher="Kyle Spearrin"/>
         <DisplayName>jQuery Code Snippets</DisplayName>
-        <Description xml:space="preserve">130+ jQuery code snippets for Visual Studio 2012, 2013, 2015, &amp; 2017.</Description>
+        <Description xml:space="preserve">130+ jQuery code snippets for Visual Studio 2012-2019.</Description>
         <MoreInfo>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</MoreInfo>
         <GettingStartedGuide>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets</GettingStartedGuide>
         <ReleaseNotes>https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets/wiki/Release-Notes</ReleaseNotes>

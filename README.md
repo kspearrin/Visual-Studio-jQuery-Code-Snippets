@@ -2,11 +2,11 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/3o0b1ofu94xuqpsa?svg=true)](https://ci.appveyor.com/project/kspearrin/visual-studio-jquery-code-snippets)
 
-This project hosts a collection of common jQuery code snippets for use in Visual Studio 2012, 2013, 2015, and 2017. See a demo video on YouTube here: <http://www.youtube.com/watch?v=Escy0hbEkI8&hd=1>.
+This project hosts a collection of common jQuery code snippets for use in Visual Studio 2012-2019. See a demo video on YouTube here: <http://www.youtube.com/watch?v=Escy0hbEkI8&hd=1>.
 
 ## Installation
 
-1. Open Visual Studio 2012/2013/2015/2017.
+1. Open Visual Studio 2012/2013/2015/2017/2019.
 2. Navigate to **Tools** > **Extensions and Updates**.
 3. Search **Online** for "jquery code snippets".
 4. Select the "jQuery Code Snippets" extension and click **Install**.
