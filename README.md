@@ -21,8 +21,8 @@ There are over 130 code snippets for jQuery included. Check out the [snippet lis
 
 ## Changelog
 
-**v1.7.0**
-- Added VS 2017 support.
+**v1.8.0**
+- Added VS 2019 support.
 
 [Previous Versions](https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets/wiki/Release-Notes)
 
